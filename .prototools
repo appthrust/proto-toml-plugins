@@ -1,0 +1,4 @@
+k3d = "5.6.0"
+
+[plugins]
+k3d = "source:https://raw.githubusercontent.com/appthrust/proto-toml-plugins/main/k3d/plugin.toml"
