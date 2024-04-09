@@ -1,0 +1,27 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "black"
+type = "cli"
+
+[platform.linux]
+download-file = "black_linux"
+checksum-file = "checksums.txt"
+
+[platform.macos]
+download-file = "black_macos"
+checksum-file = "checksums.txt"
+
+[platform.windows]
+download-file = "black_windows.exe"
+checksum-file = "checksums.txt"
+
+[install]
+download-url = "https://github.com/psf/black/releases/download/{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/psf/black"

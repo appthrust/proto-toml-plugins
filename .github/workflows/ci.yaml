@@ -26,7 +26,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+      - if: github.ref_name != 'main'
+        uses: actions-rs/cargo@v1
+        with:
+          command: install
+          args: sd
+      - if: github.ref_name != 'main'
+        run: sd /appthrust/proto-toml-plugins/main/ /appthrust/proto-toml-plugins/${{ github.event.pull_request.head.ref }}/ .prototools
+      - if: github.ref_name != 'main'
+        run: cat .prototools
       - name: Install
         uses: moonrepo/setup-toolchain@v0
         env:
