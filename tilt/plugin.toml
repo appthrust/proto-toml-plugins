@@ -1,0 +1,29 @@
+# A TOML plugin for proto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "tilt"
+type = "cli"
+
+[platform.linux]
+download-file = "tilt.{version}.linux.{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[platform.macos]
+download-file = "tilt.{version}.mac.{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[platform.windows]
+download-file = "tilt.{version}.windows.{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[install]
+download-url = "https://github.com/tilt-dev/tilt/releases/download/v{version}/{download_file}"
+
+[install.arch]
+arm = "arm"
+arm64 = "arm64"
+x86 = "x86"
+x86_64 = "x86_64"
+
+[resolve]
+git-url = "https://github.com/tilt-dev/tilt"
