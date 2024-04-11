@@ -1,10 +1,10 @@
 black = "24.3.0"
 k3d = "5.6.0"
-moon = "1.23.4"
 tilt = "0.33.12"
+moon = "1.23.4"
 
 [plugins]
 black = "source:https://raw.githubusercontent.com/appthrust/proto-toml-plugins/main/black/plugin.toml"
 k3d = "source:https://raw.githubusercontent.com/appthrust/proto-toml-plugins/main/k3d/plugin.toml"
+tilt = "source:https://raw.githubusercontent.com/appthrust/proto-toml-plugins/main/tilt/plugin.toml"
 moon = "source:https://raw.githubusercontent.com/moonrepo/moon/master/proto-plugin.toml"
-tilt = "source:./tilt/plugin.toml"
