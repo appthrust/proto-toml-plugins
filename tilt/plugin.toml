@@ -13,7 +13,7 @@ download-file = "tilt.{version}.mac.{arch}.tar.gz"
 checksum-file = "checksums.txt"
 
 [platform.windows]
-download-file = "tilt.{version}.windows.{arch}.tar.gz"
+download-file = "tilt.{version}.windows.{arch}.zip"
 checksum-file = "checksums.txt"
 
 [install]
