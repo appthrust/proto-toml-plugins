@@ -1,0 +1,27 @@
+# A TOML plugin for argocd:
+# https://moonrepo.dev/docs/argocd/plugins#toml-plugin
+
+name = "argocd"
+type = "cli"
+
+[platform.linux]
+download-file = "argocd-linux-{arch}"
+checksum-file = "cli_checksums.txt"
+
+[platform.macos]
+download-file = "argocd-darwin-{arch}"
+checksum-file = "cli_checksums.txt"
+
+[platform.windows]
+download-file = "argocd-windows-{arch}.exe"
+checksum-file = "cli_checksums.txt"
+
+[install]
+download-url = "https://github.com/argoproj/argo-cd/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/argoproj/argo-cd"
