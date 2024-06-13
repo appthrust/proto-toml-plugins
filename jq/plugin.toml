@@ -1,0 +1,28 @@
+# A TOML plugin for jq:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "jq"
+type = "cli"
+
+[platform.linux]
+download-file = "jq-linux-{arch}"
+checksum-file = "sha256sum.txt"
+
+[platform.macos]
+download-file = "jq-macos-{arch}"
+checksum-file = "sha256sum.txt"
+
+[platform.windows]
+download-file = "jq-windows-{arch}.exe"
+checksum-file = "sha256sum.txt"
+
+[install]
+download-url = "https://github.com/jqlang/jq/releases/download/jq-{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/jqlang/jq"
+version-pattern = "^jq-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
