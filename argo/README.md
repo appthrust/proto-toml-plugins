@@ -1,6 +1,6 @@
 # argo plugin
 
-[argo](https://argocli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[argo](https://argo-workflows.readthedocs.io/en/latest/walk-through/argo-cli/) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

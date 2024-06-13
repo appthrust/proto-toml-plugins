@@ -1,6 +1,6 @@
 # yq plugin
 
-[yq](https://yqcli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[yq](https://mikefarah.gitbook.io/yq) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

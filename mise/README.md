@@ -1,6 +1,6 @@
 # mise plugin
 
-[mise](https://misecli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[mise](https://mise.jdx.dev/) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

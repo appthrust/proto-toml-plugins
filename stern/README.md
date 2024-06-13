@@ -1,6 +1,6 @@
 # stern plugin
 
-[stern](https://sterncli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[stern](https://github.com/stern/stern) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

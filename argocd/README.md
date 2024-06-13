@@ -1,6 +1,6 @@
 # argocd plugin
 
-[argocd](https://argocdcli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[argocd](https://argo-cd.readthedocs.io/en/stable/user-guide/commands/argocd/) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

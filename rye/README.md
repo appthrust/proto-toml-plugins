@@ -1,6 +1,6 @@
 # Rye plugin
 
-[Rye](https://ryecli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[Rye](https://rye.astral.sh/) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 
