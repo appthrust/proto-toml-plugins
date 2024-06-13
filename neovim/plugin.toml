@@ -1,0 +1,31 @@
+# A TOML plugin for neovim:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "neovim"
+type = "cli"
+
+[platform.linux]
+download-file = "nvim-linux64.tar.gz"
+checksum-file = "nvim-linux64.tar.gz.sha256sum"
+
+[platform.macos]
+download-file = "nvim-macos-{arch}.tar.gz"
+checksum-file = "nvim-macos-{arch}.tar.gz.sha256sum"
+
+[platform.windows]
+download-file = "nvim-win64.{ext}"
+checksum-file = "nvim-win64.{ext}.sha256sum"
+
+[install]
+download-url = "https://github.com/neovim/neovim/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "x86_64"
+
+[install.ext]
+msi = "msi"
+zip = "zip"
+
+[resolve]
+git-url = "https://github.com/neovim/neovim"
