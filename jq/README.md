@@ -1,6 +1,6 @@
 # jq plugin
 
-[jq](https://jqcli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[jq](https://jqlang.github.io/jq/) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

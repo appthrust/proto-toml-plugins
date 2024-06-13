@@ -1,6 +1,6 @@
 # neovim plugin
 
-[neovim](https://neovimcli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[neovim](https://neovim.io/doc/) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

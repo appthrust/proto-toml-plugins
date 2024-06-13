@@ -1,6 +1,6 @@
 # fzf plugin
 
-[fzf](https://fzfcli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[fzf](https://github.com/junegunn/fzf) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # jnv plugin
 
-[jnv](https://jnvcli.io) plugin for [proto](https://github.com/moonrepo/proto).
+[jnv](https://github.com/ynqa/jnv) plugin for [proto](https://github.com/moonrepo/proto).
 
 ## Installation
 
