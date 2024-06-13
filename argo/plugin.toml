@@ -1,7 +1,7 @@
 # A TOML plugin for argo:
 # https://moonrepo.dev/docs/proto/plugins#toml-plugin
 
-name = "argo"
+name = "Argo CLI"
 type = "cli"
 
 [platform.linux]
