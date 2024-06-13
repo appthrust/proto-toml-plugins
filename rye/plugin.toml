@@ -1,0 +1,32 @@
+name = "Rye"
+type = "cli"
+
+[platform.linux]
+bin-path = "rye-{arch}-linux"
+checksum-file = "rye-{arch}-linux.gz.sha256"
+download-file = "rye-{arch}-linux.gz"
+
+[platform.macos]
+bin-path = "rye-{arch}-macos"
+checksum-file = "rye-{arch}-macos.gz.sha256"
+download-file = "rye-{arch}-macos.gz"
+
+[platform.windows]
+bin-path = "rye-{arch}-windows.exe"
+checksum-file = "rye-{arch}-windows.exe.sha256"
+download-file = "rye-{arch}-windows.exe"
+
+[install]
+checksum-url = "https://github.com/astral-sh/rye/releases/download/{version}/{checksum_file}"
+download-url = "https://github.com/astral-sh/rye/releases/download/{version}/{download_file}"
+
+[install.arch]
+aarch64 = "aarch64"
+x86_64 = "x86_64"
+x86 = "x86"
+
+[install.primary]
+exe-path = "rye-{arch}-{os}"
+
+[resolve]
+git-url = "https://github.com/astral-sh/rye"
