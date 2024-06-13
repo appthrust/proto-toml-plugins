@@ -1,0 +1,30 @@
+# A TOML plugin for k6:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "k6"
+type = "cli"
+
+[platform.linux]
+bin-path = "k6-v{version}-linux-{arch}/k6"
+download-file = "k6-v{version}-linux-{arch}.tar.gz"
+checksum-file = "k6-v{version}-checksums.txt"
+
+[platform.macos]
+bin-path = "k6-v{version}-macos-{arch}/k6"
+download-file = "k6-v{version}-macos-{arch}.zip"
+checksum-file = "k6-v{version}-checksums.txt"
+
+[platform.windows]
+bin-path = "k6-v{version}-windows-{arch}.exe/k6.exe"
+download-file = "k6-v{version}-windows-{arch}.zip"
+checksum-file = "k6-v{version}-checksums.txt"
+
+[install]
+download-url = "https://github.com/grafana/k6/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/grafana/k6"
