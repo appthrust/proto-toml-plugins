@@ -1,0 +1,28 @@
+# A TOML plugin for mise:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "mise"
+type = "cli"
+
+[platform.linux]
+download-file = "mise-v{version}-linux-{arch}"
+checksum-file = "SHASUMS256.txt"
+
+[platform.macos]
+download-file = "mise-v{version}-macos-{arch}"
+checksum-file = "SHASUMS256.txt"
+
+[platform.windows]
+download-file = "mise-v{version}-win-{arch}.zip"
+checksum-file = "SHASUMS256.txt"
+
+[install]
+download-url = "https://github.com/jdx/mise/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "x64"
+armv7 = "armv7"
+
+[resolve]
+git-url = "https://github.com/jdx/mise"
