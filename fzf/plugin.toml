@@ -1,0 +1,27 @@
+# A TOML plugin for fzf:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "fzf"
+type = "cli"
+
+[platform.linux]
+download-file = "fzf-{version}-linux_{arch}.tar.gz"
+checksum-file = "fzf_{version}_checksums.txt"
+
+[platform.macos]
+download-file = "fzf-{version}-darwin_{arch}.zip"
+checksum-file = "fzf_{version}_checksums.txt"
+
+[platform.windows]
+download-file = "fzf-{version}-windows_{arch}.zip"
+checksum-file = "fzf_{version}_checksums.txt"
+
+[install]
+download-url = "https://github.com/junegunn/fzf/releases/download/{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/junegunn/fzf"
