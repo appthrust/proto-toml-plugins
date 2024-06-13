@@ -1,5 +1,5 @@
 # A TOML plugin for argocd:
-# https://moonrepo.dev/docs/argocd/plugins#toml-plugin
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
 
 name = "argocd"
 type = "cli"

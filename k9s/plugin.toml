@@ -1,5 +1,5 @@
 # A TOML plugin for k9s:
-# https://moonrepo.dev/docs/k9s/plugins#toml-plugin
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
 
 name = "k9s"
 type = "cli"
