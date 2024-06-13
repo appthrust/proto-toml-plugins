@@ -1,0 +1,27 @@
+# A TOML plugin for stern:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "stern"
+type = "cli"
+
+[platform.linux]
+download-file = "stern_{version}_linux_{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[platform.macos]
+download-file = "stern_{version}_darwin_{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[platform.windows]
+download-file = "stern_{version}_windows_{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[install]
+download-url = "https://github.com/stern/stern/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/stern/stern"
