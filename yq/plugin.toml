@@ -1,0 +1,27 @@
+# A TOML plugin for yq:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "yq"
+type = "cli"
+
+[platform.linux]
+download-file = "yq_linux_{arch}"
+checksum-file = "checksums"
+
+[platform.macos]
+download-file = "yq_darwin_{arch}"
+checksum-file = "checksums"
+
+[platform.windows]
+download-file = "yq_windows_{arch}.exe"
+checksum-file = "checksums"
+
+[install]
+download-url = "https://github.com/mikefarah/yq/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+
+[resolve]
+git-url = "https://github.com/mikefarah/yq"
