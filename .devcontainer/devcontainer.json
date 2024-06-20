@@ -1,0 +1,14 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"workspaceFolder": "/workspace",
+	"remoteEnv": {
+		"PATH": "/root/.proto/shims:/root/.proto/bin:${containerEnv:PATH}"
+	},
+	"customizations": {
+		"jetbrains": {
+			"backend": "IntelliJ"
+		}
+	},
+	"postCreateCommand": ".devcontainer/setup.sh"
+}
