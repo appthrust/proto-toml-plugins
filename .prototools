@@ -1,1 +1,5 @@
-bun = "1.1.15"
+moon = "1.25.6"
+node = "22.3.0"
+
+[plugins]
+moon = "https://raw.githubusercontent.com/moonrepo/moon/master/proto-plugin.toml"
