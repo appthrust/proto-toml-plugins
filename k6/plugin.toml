@@ -15,7 +15,7 @@ download-file = "k6-v{version}-macos-{arch}.zip"
 checksum-file = "k6-v{version}-checksums.txt"
 
 [platform.windows]
-bin-path = "k6-v{version}-windows-{arch}.exe/k6.exe"
+bin-path = "k6-v{version}-windows-{arch}/k6.exe"
 download-file = "k6-v{version}-windows-{arch}.zip"
 checksum-file = "k6-v{version}-checksums.txt"
 

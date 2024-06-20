@@ -15,6 +15,7 @@ checksum-file = "SHASUMS256.txt"
 [platform.windows]
 download-file = "mise-v{version}-win-{arch}.zip"
 checksum-file = "SHASUMS256.txt"
+bin-path = "bin/mise.exe"
 
 [install]
 download-url = "https://github.com/jdx/mise/releases/download/v{version}/{download_file}"

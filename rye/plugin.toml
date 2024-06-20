@@ -12,9 +12,9 @@ checksum-file = "rye-{arch}-macos.gz.sha256"
 download-file = "rye-{arch}-macos.gz"
 
 [platform.windows]
-bin-path = "rye-{arch}-windows.exe"
-checksum-file = "rye-{arch}-windows.exe.sha256"
-download-file = "rye-{arch}-windows.exe"
+bin-path = "rye-x86-windows.exe"
+checksum-file = "rye-x86-windows.exe.sha256"
+download-file = "rye-x86-windows.exe"
 
 [install]
 checksum-url = "https://github.com/astral-sh/rye/releases/download/{version}/{checksum_file}"
@@ -23,7 +23,6 @@ download-url = "https://github.com/astral-sh/rye/releases/download/{version}/{do
 [install.arch]
 aarch64 = "aarch64"
 x86_64 = "x86_64"
-x86 = "x86"
 
 [install.primary]
 exe-path = "rye-{arch}-{os}"
