@@ -1,0 +1,8 @@
+$schema: https://moonrepo.dev/schemas/tasks.json
+
+tasks:
+  test:
+    command: vitest --run --pool=forks --passWithNoTests
+    inputs:
+      - "**/*.ts"
+    platform: node
