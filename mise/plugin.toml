@@ -22,7 +22,6 @@ download-url = "https://github.com/jdx/mise/releases/download/v{version}/{downlo
 [install.arch]
 aarch64 = "arm64"
 x86_64 = "x64"
-armv7 = "armv7"
 
 [resolve]
 git-url = "https://github.com/jdx/mise"

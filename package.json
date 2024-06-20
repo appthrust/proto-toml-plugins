@@ -1,0 +1,11 @@
+{
+	"name": "proto-toml-plugin",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.1",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
