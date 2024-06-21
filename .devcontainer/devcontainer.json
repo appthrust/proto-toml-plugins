@@ -1,5 +1,5 @@
 {
-	"name": "proto-toml-plugin",
+	"name": "appthrust/proto-toml-plugin",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"runArgs": ["--platform=linux/amd64"],
 	"workspaceFolder": "/workspace",
