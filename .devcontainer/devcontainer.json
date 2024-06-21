@@ -1,5 +1,5 @@
 {
-	"name": "Ubuntu",
+	"name": "proto-toml-plugin",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"runArgs": ["--platform=linux/amd64"],
 	"workspaceFolder": "/workspace",
