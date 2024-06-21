@@ -1,15 +1,10 @@
 {
-	"name": "Ubuntu",
+	"name": "appthrust/proto-toml-plugin",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"runArgs": ["--platform=linux/amd64"],
 	"workspaceFolder": "/workspace",
 	"remoteEnv": {
 		"PATH": "/root/.proto/shims:/root/.proto/bin:${containerEnv:PATH}"
-	},
-	"customizations": {
-		"jetbrains": {
-			"backend": "IntelliJ"
-		}
 	},
 	"postCreateCommand": ".devcontainer/setup.sh"
 }
