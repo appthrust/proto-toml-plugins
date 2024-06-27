@@ -1,0 +1,32 @@
+# A TOML plugin for gum:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "gum"
+type = "cli"
+
+[platform.linux]
+bin-path = "gum_{version}_Linux_{arch}/gum"
+download-file = "gum_{version}_Linux_{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[platform.macos]
+bin-path = "gum_{version}_Darwin_{arch}/gum"
+download-file = "gum_{version}_Darwin_{arch}.tar.gz"
+checksum-file = "checksums.txt"
+
+[platform.windows]
+bin-path = "gum_{version}_Windows_{arch}/gum.exe"
+download-file = "gum_{version}_Windows_{arch}.zip"
+checksum-file = "checksums.txt"
+
+[install]
+download-url = "https://github.com/charmbracelet/gum/releases/download/v{version}/{download_file}"
+checksum-url = "https://github.com/charmbracelet/gum/releases/download/v{version}/{checksum_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "x86_64"
+x86 = "i386"
+
+[resolve]
+git-url = "https://github.com/charmbracelet/gum"
