@@ -1,0 +1,28 @@
+# A TOML plugin for direnv:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "direnv"
+type = "cli"
+
+[platform.linux]
+download-file = "direnv.linux-{arch}"
+checksum-file = "direnv-checksums.txt"
+
+[platform.macos]
+download-file = "direnv.darwin-{arch}"
+checksum-file = "direnv-checksums.txt"
+
+[platform.windows]
+download-file = "direnv.windows-{arch}.exe"
+checksum-file = "direnv-checksums.txt"
+
+[install]
+download-url = "https://github.com/direnv/direnv/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "amd64"
+x86 = "386"
+
+[resolve]
+git-url = "https://github.com/direnv/direnv"
