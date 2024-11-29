@@ -1,0 +1,27 @@
+# A TOML plugin for Trivy:
+# https://moonrepo.dev/docs/proto/toml-plugin
+
+name = "Trivy"
+type = "cli"
+
+[platform.freebsd]
+download-file = "trivy_{version}_FreeBSD-{arch}.tar.gz"
+
+[platform.linux]
+download-file = "trivy_{version}_Linux-{arch}.tar.gz"
+
+[platform.macos]
+download-file = "trivy_{version}_macOS-{arch}.tar.gz"
+
+[install]
+checksum-url = "https://github.com/aquasecurity/trivy/releases/download/v{version}/trivy_{version}_checksums.txt"
+download-url = "https://github.com/aquasecurity/trivy/releases/download/v{version}/{download_file}"
+
+[install.arch]
+x86 = "36bit"
+x86_64 = "64bit"
+arm = "ARM"
+aarch64 = "ARM64"
+
+[resolve]
+git-url = "https://github.com/aquasecurity/trivy"
