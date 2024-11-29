@@ -1,0 +1,25 @@
+# A TOML plugin for Terrascan:
+# https://moonrepo.dev/docs/proto/toml-plugin
+
+name = "Terrascan"
+type = "cli"
+
+[platform.linux]
+download-file = "terrascan_{version}_Linux_{arch}.tar.gz"
+
+[platform.macos]
+download-file = "terrascan_{version}_Darwin_{arch}.tar.gz"
+
+[platform.windows]
+download-file = "terrascan_{version}_Windows_{arch}.tar.gz"
+
+[install]
+checksum-url = "https://github.com/tenable/terrascan/releases/download/v{version}/checksums.txt"
+download-url = "https://github.com/tenable/terrascan/releases/download/v{version}/{download_file}"
+
+[install.arch]
+x86 = "i386"
+aarch64 = "arm64"
+
+[resolve]
+git-url = "https://github.com/tenable/terrascan"
