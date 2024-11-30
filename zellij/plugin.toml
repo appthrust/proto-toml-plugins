@@ -15,9 +15,5 @@ checksum-file = "zellij-{arch}-apple-darwin.sha256sum"
 [install]
 download-url = "https://github.com/zellij-org/zellij/releases/download/v{version}/{download_file}"
 
-[install.arch]
-aarch64 = "aarch64"
-x86_64 = "x86_64"
-
 [resolve]
 git-url = "https://github.com/zellij-org/zellij"

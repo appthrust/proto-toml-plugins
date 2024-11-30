@@ -19,11 +19,5 @@ checksum-file = "checksums.txt"
 [install]
 download-url = "https://github.com/tilt-dev/tilt/releases/download/v{version}/{download_file}"
 
-[install.arch]
-arm = "arm"
-arm64 = "arm64"
-x86 = "x86"
-x86_64 = "x86_64"
-
 [resolve]
 git-url = "https://github.com/tilt-dev/tilt"

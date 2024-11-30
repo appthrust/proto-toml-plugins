@@ -25,7 +25,6 @@ checksum-url = "https://github.com/charmbracelet/gum/releases/download/v{version
 
 [install.arch]
 aarch64 = "arm64"
-x86_64 = "x86_64"
 x86 = "i386"
 
 [resolve]

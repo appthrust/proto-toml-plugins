@@ -20,9 +20,5 @@ download-file = "rye-x86-windows.exe"
 checksum-url = "https://github.com/astral-sh/rye/releases/download/{version}/{checksum_file}"
 download-url = "https://github.com/astral-sh/rye/releases/download/{version}/{download_file}"
 
-[install.arch]
-aarch64 = "aarch64"
-x86_64 = "x86_64"
-
 [resolve]
 git-url = "https://github.com/astral-sh/rye"

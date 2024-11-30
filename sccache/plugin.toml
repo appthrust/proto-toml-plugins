@@ -22,9 +22,5 @@ checksum-file = "sccache-v{version}-{arch}-pc-windows-msvc.zip.sha256"
 [install]
 download-url = "https://github.com/mozilla/sccache/releases/download/v{version}/{download_file}"
 
-[install.arch]
-aarch64 = "aarch64"
-x86_64 = "x86_64"
-
 [resolve]
 git-url = "https://github.com/mozilla/sccache"
