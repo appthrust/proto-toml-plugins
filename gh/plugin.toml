@@ -5,17 +5,17 @@ name = "GitHub CLI"
 type = "cli"
 
 [platform.linux]
-bin-path = "gh_{version}_linux_{arch}/bin/gh"
+exe-path = "gh_{version}_linux_{arch}/bin/gh"
 download-file = "gh_{version}_linux_{arch}.tar.gz"
 checksum-file = "gh_{version}_checksums.txt"
 
 [platform.macos]
-bin-path = "gh_{version}_macOS_{arch}/bin/gh"
+exe-path = "gh_{version}_macOS_{arch}/bin/gh"
 download-file = "gh_{version}_macOS_{arch}.zip"
 checksum-file = "gh_{version}_checksums.txt"
 
 [platform.windows]
-bin-path = "gh_{version}_windows_{arch}/bin/gh.exe"
+exe-path = "gh_{version}_windows_{arch}/bin/gh.exe"
 download-file = "gh_{version}_windows_{arch}.zip"
 checksum-file = "gh_{version}_checksums.txt"
 

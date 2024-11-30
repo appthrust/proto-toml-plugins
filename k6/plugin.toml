@@ -5,17 +5,17 @@ name = "k6"
 type = "cli"
 
 [platform.linux]
-bin-path = "k6-v{version}-linux-{arch}/k6"
+exe-path = "k6-v{version}-linux-{arch}/k6"
 download-file = "k6-v{version}-linux-{arch}.tar.gz"
 checksum-file = "k6-v{version}-checksums.txt"
 
 [platform.macos]
-bin-path = "k6-v{version}-macos-{arch}/k6"
+exe-path = "k6-v{version}-macos-{arch}/k6"
 download-file = "k6-v{version}-macos-{arch}.zip"
 checksum-file = "k6-v{version}-checksums.txt"
 
 [platform.windows]
-bin-path = "k6-v{version}-windows-{arch}/k6.exe"
+exe-path = "k6-v{version}-windows-{arch}/k6.exe"
 download-file = "k6-v{version}-windows-{arch}.zip"
 checksum-file = "k6-v{version}-checksums.txt"
 

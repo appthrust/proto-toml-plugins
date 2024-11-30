@@ -5,17 +5,17 @@ name = "gum"
 type = "cli"
 
 [platform.linux]
-bin-path = "gum_{version}_Linux_{arch}/gum"
+exe-path = "gum_{version}_Linux_{arch}/gum"
 download-file = "gum_{version}_Linux_{arch}.tar.gz"
 checksum-file = "checksums.txt"
 
 [platform.macos]
-bin-path = "gum_{version}_Darwin_{arch}/gum"
+exe-path = "gum_{version}_Darwin_{arch}/gum"
 download-file = "gum_{version}_Darwin_{arch}.tar.gz"
 checksum-file = "checksums.txt"
 
 [platform.windows]
-bin-path = "gum_{version}_Windows_{arch}/gum.exe"
+exe-path = "gum_{version}_Windows_{arch}/gum.exe"
 download-file = "gum_{version}_Windows_{arch}.zip"
 checksum-file = "checksums.txt"
 

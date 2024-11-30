@@ -5,17 +5,17 @@ name = "jnv"
 type = "cli"
 
 [platform.linux]
-bin-path = "jnv-{arch}-unknown-linux-gnu/jnv"
+exe-path = "jnv-{arch}-unknown-linux-gnu/jnv"
 download-file = "jnv-{arch}-unknown-linux-gnu.tar.xz"
 checksum-file = "jnv-{arch}-unknown-linux-gnu.tar.xz.sha256"
 
 [platform.macos]
-bin-path = "jnv-{arch}-apple-darwin/jnv"
+exe-path = "jnv-{arch}-apple-darwin/jnv"
 download-file = "jnv-{arch}-apple-darwin.tar.xz"
 checksum-file = "jnv-{arch}-apple-darwin.tar.xz.sha256"
 
 [platform.windows]
-bin-path = "jnv-{arch}-pc-windows-msvc/jnv.exe"
+exe-path = "jnv-{arch}-pc-windows-msvc/jnv.exe"
 download-file = "jnv-{arch}-pc-windows-msvc.zip"
 checksum-file = "jnv-{arch}-pc-windows-msvc.zip.sha256"
 

@@ -2,17 +2,17 @@ name = "Rye"
 type = "cli"
 
 [platform.linux]
-bin-path = "rye-{arch}-linux"
+exe-path = "rye-{arch}-linux"
 checksum-file = "rye-{arch}-linux.gz.sha256"
 download-file = "rye-{arch}-linux.gz"
 
 [platform.macos]
-bin-path = "rye-{arch}-macos"
+exe-path = "rye-{arch}-macos"
 checksum-file = "rye-{arch}-macos.gz.sha256"
 download-file = "rye-{arch}-macos.gz"
 
 [platform.windows]
-bin-path = "rye-x86-windows.exe"
+exe-path = "rye-x86-windows.exe"
 checksum-file = "rye-x86-windows.exe.sha256"
 download-file = "rye-x86-windows.exe"
 
