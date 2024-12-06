@@ -5,17 +5,17 @@ name = "buildifier"
 type = "cli"
 
 [platform.linux]
-bin-path = "buildifier"
+exe-path = "buildifier"
 download-file = "buildifier-linux-{arch}"
 checksum-file = "checksums.txt"
 
 [platform.macos]
-bin-path = "buildifier"
+exe-path = "buildifier"
 download-file = "buildifier-darwin-{arch}"
 checksum-file = "checksums.txt"
 
 [platform.windows]
-bin-path = "buildifier.exe"
+exe-path = "buildifier.exe"
 download-file = "buildifier-windows-{arch}.exe"
 checksum-file = "checksums.txt"
 

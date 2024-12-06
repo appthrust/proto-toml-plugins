@@ -5,26 +5,22 @@ name = "sccache"
 type = "cli"
 
 [platform.linux]
-bin-path = "sccache-v{version}-{arch}-unknown-linux-musl/sccache"
+exe-path = "sccache-v{version}-{arch}-unknown-linux-musl/sccache"
 download-file = "sccache-v{version}-{arch}-unknown-linux-musl.tar.gz"
 checksum-file = "sccache-v{version}-{arch}-unknown-linux-musl.tar.gz.sha256"
 
 [platform.macos]
-bin-path = "sccache-v{version}-{arch}-apple-darwin/sccache"
+exe-path = "sccache-v{version}-{arch}-apple-darwin/sccache"
 download-file = "sccache-v{version}-{arch}-apple-darwin.tar.gz"
 checksum-file = "sccache-v{version}-{arch}-apple-darwin.tar.gz.sha256"
 
 [platform.windows]
-bin-path = "sccache-v{version}-{arch}-pc-windows-msvc/sccache.exe"
+exe-path = "sccache-v{version}-{arch}-pc-windows-msvc/sccache.exe"
 download-file = "sccache-v{version}-{arch}-pc-windows-msvc.zip"
 checksum-file = "sccache-v{version}-{arch}-pc-windows-msvc.zip.sha256"
 
 [install]
 download-url = "https://github.com/mozilla/sccache/releases/download/v{version}/{download_file}"
-
-[install.arch]
-aarch64 = "aarch64"
-x86_64 = "x86_64"
 
 [resolve]
 git-url = "https://github.com/mozilla/sccache"

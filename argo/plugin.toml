@@ -5,17 +5,17 @@ name = "Argo CLI"
 type = "cli"
 
 [platform.linux]
-bin-path = "argo-linux-{arch}"
+exe-path = "argo-linux-{arch}"
 download-file = "argo-linux-{arch}.gz"
 checksum-file = "argo-workflows-cli-checksums.txt"
 
 [platform.macos]
-bin-path = "argo-darwin-{arch}"
+exe-path = "argo-darwin-{arch}"
 download-file = "argo-darwin-{arch}.gz"
 checksum-file = "argo-workflows-cli-checksums.txt"
 
 [platform.windows]
-bin-path = "argo-windows-{arch}.exe"
+exe-path = "argo-windows-{arch}.exe"
 download-file = "argo-windows-{arch}.exe.gz"
 checksum-file = "argo-workflows-cli-checksums.txt"
 
