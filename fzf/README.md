@@ -19,3 +19,12 @@ proto install fzf
 proto plugin add fzf "source:https://raw.githubusercontent.com/appthrust/proto-toml-plugins/main/fzf/plugin.toml"
 proto pin fzf latest --resolve
 ```
+
+## Installing versions before 0.54
+
+fzf had its URLs changed with version 0.54, so this plugin was updated accordingly to allow installing the latest versions of fzf. To install versions 0.53 and older of fzf with proto, you have to use an older version of this plugin:
+
+```shell
+proto plugin add fzf "source:https://raw.githubusercontent.com/appthrust/proto-toml-plugins/a94ea8ffa8cdcadf4206e50385d8910a27b1cbff/fzf/plugin.toml"
+proto pin fzf 0.53.0
+```

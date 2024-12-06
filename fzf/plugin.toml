@@ -17,7 +17,7 @@ download-file = "fzf-{version}-windows_{arch}.zip"
 checksum-file = "fzf_{version}_checksums.txt"
 
 [install]
-download-url = "https://github.com/junegunn/fzf/releases/download/{version}/{download_file}"
+download-url = "https://github.com/junegunn/fzf/releases/download/v{version}/{download_file}"
 
 [install.arch]
 aarch64 = "arm64"
