@@ -8,7 +8,7 @@ type = "cli"
 archive-prefix = "cocogitto-{version}-{arch}-unknown-linux-{libc}"
 exe-path = "{arch}-unknown-linux-{libc}/cog"
 download-file = "cocogitto-{version}-{arch}-unknown-linux-{libc}.tar.gz"
-archs = ["aarch64", "x86_64", "armv7"]
+archs = ["aarch64", "x86_64", "arm"]
 
 [platform.macos]
 archive-prefix = "cocogitto-{version}-{arch}-apple-darwin"
@@ -24,6 +24,9 @@ archs = ["aarch64"]
 
 [install]
 download-url = "https://github.com/cocogitto/cocogitto/releases/download/{version}/{download_file}"
+
+[install.arch]
+arm = "armv7"
 
 [resolve]
 git-url = "https://github.com/cocogitto/cocogitto"
