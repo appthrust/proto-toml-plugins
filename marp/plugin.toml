@@ -1,0 +1,26 @@
+# A TOML plugin for marp:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "marp"
+type = "cli"
+
+[platform.linux]
+archive-prefix = "marp-cli-v{version}-linux"
+exe-path = "marp"
+download-file = "marp-cli-v{version}-linux.tar.gz"
+
+[platform.macos]
+archive-prefix = "marp-cli-v{version}-mac"
+exe-path = "marp"
+download-file = "marp-cli-v{version}-mac.tar.gz"
+
+[platform.windows]
+archive-prefix = "marp-cli-v{version}-win"
+exe-path = "marp.exe"
+download-file = "marp-cli-v{version}-win.zip"
+
+[install]
+download-url = "https://github.com/marp-team/marp-cli/releases/download/v{version}/{download_file}"
+
+[resolve]
+git-url = "https://github.com/marp-team/marp-cli"
