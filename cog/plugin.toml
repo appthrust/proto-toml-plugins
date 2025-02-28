@@ -8,17 +8,19 @@ type = "cli"
 archive-prefix = "cocogitto-{version}-{arch}-unknown-linux-{libc}"
 exe-path = "{arch}-unknown-linux-{libc}/cog"
 download-file = "cocogitto-{version}-{arch}-unknown-linux-{libc}.tar.gz"
+archs = ["aarch64", "x86_64", "armv7"]
 
 [platform.macos]
 archive-prefix = "cocogitto-{version}-{arch}-apple-darwin"
 exe-path = "{arch}-apple-darwin/cog"
 download-file = "cocogitto-{version}-{arch}-apple-darwin.tar.gz"
+archs = ["aarch64"]
 
 [platform.windows]
 archive-prefix = "cocogitto-{version}-{arch}-pc-windows-msvc"
 exe-path = "{arch}-pc-windows-msvc/cog.exe"
 download-file = "cocogitto-{version}-{arch}-pc-windows-msvc.tar.gz"
-
+archs = ["aarch64"]
 
 [install]
 download-url = "https://github.com/cocogitto/cocogitto/releases/download/{version}/{download_file}"
