@@ -1,8 +1,8 @@
-gh = "2.51.0"
-just = "1.29.1"
-moon = "1.25.6"
-node = "22.3.0"
-rust = "1.79.0"
+gh = "2.67.0"
+just = "1.39.0"
+moon = "1.32.7"
+node = "22.14.0"
+rust = "1.85.0"
 
 [plugins]
 gh = "https://raw.githubusercontent.com/appthrust/proto-toml-plugins/main/gh/plugin.toml"
