@@ -11,7 +11,7 @@ download-file = "terrascan_{version}_Linux_{arch}.tar.gz"
 download-file = "terrascan_{version}_Darwin_{arch}.tar.gz"
 
 [platform.windows]
-download-file = "terrascan_{version}_Windows_{arch}.tar.gz"
+download-file = "terrascan_{version}_Windows_{arch}.zip"
 
 [install]
 checksum-url = "https://github.com/tenable/terrascan/releases/download/v{version}/checksums.txt"
