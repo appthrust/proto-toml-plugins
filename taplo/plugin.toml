@@ -14,7 +14,7 @@ exe-path = "taplo-darwin-{arch}"
 
 [platform.windows]
 download-file = "taplo-{os}-{arch}.zip"
-exe-path = "taplo-{os}-{arch}.exe"
+exe-path = "taplo.exe"
 
 [install]
 download-url = "https://github.com/tamasfe/taplo/releases/download/{version}/{download_file}"
