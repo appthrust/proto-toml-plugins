@@ -1,0 +1,23 @@
+# A TOML plugin for dotenv-linter:
+# https://moonrepo.dev/docs/proto/toml-plugin
+
+name = "dotenv-linter"
+type = "cli"
+
+[platform.linux]
+download-file = "dotenv-linter-{os}-{arch}.tar.gz"
+
+[platform.macos]
+download-file = "dotenv-linter-darwin-{arch}.tar.gz"
+
+[platform.windows]
+download-file = "dotenv-linter-win-x64.zip"
+
+[install]
+download-url = "https://github.com/dotenv-linter/dotenv-linter/releases/download/v{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+
+[resolve]
+git-url = "https://github.com/dotenv-linter/dotenv-linter"
