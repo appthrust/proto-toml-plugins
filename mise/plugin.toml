@@ -13,7 +13,7 @@ download-file = "mise-v{version}-macos-{arch}"
 checksum-file = "SHASUMS256.txt"
 
 [platform.windows]
-download-file = "mise-v{version}-win-{arch}.zip"
+download-file = "mise-v{version}-windows-{arch}.zip"
 checksum-file = "SHASUMS256.txt"
 exe-path = "bin/mise.exe"
 
