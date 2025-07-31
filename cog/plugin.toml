@@ -1,0 +1,33 @@
+# A TOML plugin for cocogitto:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "cog"
+type = "cli"
+
+[platform.linux]
+archive-prefix = "cocogitto-{version}-{arch}-unknown-linux-musl"
+exe-path = "{arch}-unknown-linux-musl/cog"
+download-file = "cocogitto-{version}-{arch}-unknown-linux-musl.tar.gz"
+archs = ["x86_64"]
+
+[platform.macos]
+archive-prefix = "cocogitto-{version}-{arch}-apple-darwin"
+exe-path = "{arch}-apple-darwin/cog"
+download-file = "cocogitto-{version}-{arch}-apple-darwin.tar.gz"
+archs = ["x86_64"]
+
+[platform.windows]
+archive-prefix = "cocogitto-{version}-{arch}-pc-windows-msvc"
+exe-path = "{arch}-pc-windows-msvc/cog.exe"
+download-file = "cocogitto-{version}-{arch}-pc-windows-msvc.tar.gz"
+archs = ["x86_64"]
+
+[install]
+download-url = "https://github.com/cocogitto/cocogitto/releases/download/{version}/{download_file}"
+
+[install.arch]
+arm = "armv7"
+
+[resolve]
+git-url = "https://github.com/cocogitto/cocogitto"
+
