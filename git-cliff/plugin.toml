@@ -1,0 +1,28 @@
+# A TOML plugin for git-cliff:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "git-cliff"
+type = "cli"
+
+[platform.linux]
+archive-prefix = "git-cliff-{version}"
+exe-path = "git-cliff"
+checksum-file = "git-cliff-{version}-{arch}-unknown-linux-{libc}.tar.gz.sha256"
+download-file = "git-cliff-{version}-{arch}-unknown-linux-{libc}.tar.gz"
+
+[platform.macos]
+archive-prefix = "git-cliff-{version}"
+exe-path = "git-cliff"
+checksum-file = "git-cliff-{arch}-pc-windows-msvc.sha256"
+download-file = "git-cliff-{version}-{arch}-apple-darwin.tar.gz"
+
+[platform.windows]
+archive-prefix = "git-cliff-{version}"
+exe-path = "git-cliff.exe"
+download-file = "git-cliff-{version}-{arch}-pc-windows-gnu.zip"
+
+[install]
+download-url = "https://github.com/orhun/git-cliff/releases/download/v{version}/{download_file}"
+
+[resolve]
+git-url = "https://github.com/orhun/git-cliff"
