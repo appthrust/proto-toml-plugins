@@ -1,0 +1,20 @@
+# A TOML plugin for xcodes:
+# https://moonrepo.dev/docs/proto/plugins#toml-plugin
+
+name = "xcodes"
+type = "cli"
+
+[platform.macos]
+download-file = "xcodes-{version}.macos.{arch}.tar.gz"
+checksum-file = "sha256sum.txt"
+exe-path = "xcodes/{version}/bin/xcodes"
+
+[install]
+download-url = "https://github.com/XcodesOrg/xcodes/releases/download/{version}/{download_file}"
+
+[install.arch]
+aarch64 = "arm64"
+x86_64 = "i386"
+
+[resolve]
+git-url = "https://github.com/XcodesOrg/xcodes"
