@@ -8,22 +8,17 @@ type = "cli"
 git-url = "https://github.com/getsentry/sentry-cli"
 
 [platform.linux]
-bin-path = "sentry-cli-Linux-{arch}"
-download-file = "sentry-cli-linux-{arch}-2.32.2.tgz"
+download-file = "sentry-cli-linux-{arch}"
 
 [platform.macos]
-bin-path = "sentry-cli-Darwin-{arch}"
-download-file = "sentry-cli-Darwin-{arch}"
+download-file = "sentry-cli-Darwin-universal"
 
 [platform.windows]
-bin-path = "sentry-cli-Windows-{arch}.exe"
 download-file = "sentry-cli-Windows-{arch}.exe"
 
 [install]
 download-url = "https://github.com/getsentry/sentry-cli/releases/download/{version}/{download_file}"
 
 [install.arch]
-arm = "arm"
-arm64 = "arm64"
-x86 = "x86"
-x86_64 = "x86_64"
+x86 = "i686"
+aarch64 = "arm64"
