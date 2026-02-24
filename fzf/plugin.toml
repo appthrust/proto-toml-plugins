@@ -9,7 +9,7 @@ download-file = "fzf-{version}-linux_{arch}.tar.gz"
 checksum-file = "fzf_{version}_checksums.txt"
 
 [platform.macos]
-download-file = "fzf-{version}-darwin_{arch}.zip"
+download-file = "fzf-{version}-darwin_{arch}.tar.gz"
 checksum-file = "fzf_{version}_checksums.txt"
 
 [platform.windows]
