@@ -1,0 +1,23 @@
+# A TOML plugin for Taplo:
+# https://moonrepo.dev/docs/proto/toml-plugin
+
+name = "Taplo"
+type = "cli"
+
+[platform.linux]
+download-file = "taplo-{os}-{arch}.gz"
+exe-path = "taplo-{os}-{arch}"
+
+[platform.macos]
+download-file = "taplo-darwin-{arch}.gz"
+exe-path = "taplo-darwin-{arch}"
+
+[platform.windows]
+download-file = "taplo-{os}-{arch}.zip"
+exe-path = "taplo.exe"
+
+[install]
+download-url = "https://github.com/tamasfe/taplo/releases/download/{version}/{download_file}"
+
+[resolve]
+git-url = "https://github.com/tamasfe/taplo"
