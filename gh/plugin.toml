@@ -15,7 +15,7 @@ download-file = "gh_{version}_macOS_{arch}.zip"
 checksum-file = "gh_{version}_checksums.txt"
 
 [platform.windows]
-exe-path = "gh_{version}_windows_{arch}/bin/gh.exe"
+exe-path = "bin/gh.exe"
 download-file = "gh_{version}_windows_{arch}.zip"
 checksum-file = "gh_{version}_checksums.txt"
 
